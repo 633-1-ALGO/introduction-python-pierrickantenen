@@ -4,3 +4,7 @@
 
 a = 11
 b = 42
+bBis = b;
+
+b = a;
+a = bBis;

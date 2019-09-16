@@ -7,3 +7,19 @@
 #                       Sinon, elle est bissextile.
 #
 # Résultat attendu : Un message affichant "Année bissextile" ou "Année non bissextile"
+annee = 2021
+bis = False
+if annee % 4 == 0:
+    bis = True
+else:
+    if annee % 100 == 0:
+        if annee % 400 == 0:
+            annee = True
+        else:
+            annee = False
+    else:
+        annee = False
+if bis == True:
+    print("Année bissextile")
+else:
+    print("Année non bissextile")
